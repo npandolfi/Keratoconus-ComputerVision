@@ -15,9 +15,12 @@ The Mission: To develop an open-source screening tool to provide eye doctors wor
 ## Technical Architecture
 The model utilizes a Hybrid Deep Learning Construct inspired by state-of-the-art research in translational vision science.
 * Base Model: EfficientNet-B0 (Transfer Learning) for its optimal balance of high accuracy and low computational footprint in a clinic setting.
-* Input Data: 7 specific corneal maps per case (Anterior/Posterior Elevation, Sagittal Curvature, and Thickness) standardized to 224x224 pixels.
+* Input Data: 7 specific corneal maps per case (Anterior/Posterior Elevation, Sagittal Curvature, and Thickness) standardized to 224x224 pixels
 * Loss Function: Weighted Cross-Entropy to address natural class imbalance (significantly more "Normal" data than "Keratoconus" data).
 * Framework: Developed in PyTorch with training optimized for both NVIDIA GPUs (CUDA) and Apple Silicon (MPS).
+
+      https://www.kaggle.com/datasets/elmehdi12/keratoconus-detection
+
 
 ## Current Benchmarks
 Our initial baseline model (Simple CNN) achieved an 80% overall accuracy on a 3-class system. Current development focuses on improving "Suspect" recall ) through advanced feature fusion and hyperparameter tuning.
