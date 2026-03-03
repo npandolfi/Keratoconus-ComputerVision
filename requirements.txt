@@ -1,0 +1,16 @@
+# Core Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data Manipulation and Numerical Processing
+numpy>=1.24.0
+pandas>=2.0.0
+pillow>=9.0.0
+
+# Evaluation and Visualization
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Deployment
+streamlit>=1.25.0
